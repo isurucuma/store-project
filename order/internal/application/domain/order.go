@@ -21,7 +21,7 @@ type Order struct {
 }
 
 type OrderItem struct {
-	ProductCode int64   `json:"product_code"`
+	ProductCode string  `json:"product_code"`
 	UnitPrice   float32 `json:"unit_price"`
 	Quantity    int32   `json:"quantity"`
 }
