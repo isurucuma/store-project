@@ -11,5 +11,5 @@ import (
 //
 // Therefore, we can easily switch the implementation of the underline payment service without changing the application.
 type PaymentPort interface {
-	Charge(ctx context.Context, order domain.Order) error
+	Charge(ctx context.Context, order *domain.Order) error
 }

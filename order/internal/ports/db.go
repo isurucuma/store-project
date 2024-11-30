@@ -12,5 +12,5 @@ import (
 // Therefore, we can easily switch the implementation of the underline database without changing the application.
 type DBPort interface {
 	Get(ctx context.Context, orderId int64) (domain.Order, error)
-	Save(ctx context.Context, order domain.Order) error
+	Save(ctx context.Context, order *domain.Order) error
 }
